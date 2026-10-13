@@ -1,0 +1,45 @@
+name: Build IPA
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode_16.4.app || sudo xcode-select -s /Applications/Xcode.app
+
+      - name: Build (unsigned)
+        run: |
+          xcodebuild \
+            -project MonPlayerDRM/MonPlayerDRM.xcodeproj \
+            -target MonPlayerDRM \
+            -configuration Release \
+            -sdk iphoneos \
+            -destination 'generic/platform=iOS' \
+            -derivedDataPath build \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGN_IDENTITY=""
+
+      - name: Package IPA
+        run: |
+          APP_PATH="build/Build/Products/Release-iphoneos/MonPlayerDRM.app"
+          ls -la "$APP_PATH"
+          rm -rf Payload MonPlayerDRM-unsigned.ipa
+          mkdir -p Payload
+          cp -R "$APP_PATH" Payload/
+          zip -qry MonPlayerDRM-unsigned.ipa Payload
+          ls -la MonPlayerDRM-unsigned.ipa
+
+      - name: Upload IPA
+        uses: actions/upload-artifact@v4
+        with:
+          name: MonPlayerDRM-unsigned
+          path: MonPlayerDRM-unsigned.ipa
+          if-no-files-found: error
