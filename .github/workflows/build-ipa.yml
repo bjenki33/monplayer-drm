@@ -21,7 +21,7 @@ jobs:
           xcodebuild -showsdks | head -30
 
       - name: Build (unsigned)
-        run: xcodebuild -project "$GITHUB_WORKSPACE/MonPlayerDRM/MonPlayerDRM.xcodeproj" -target MonPlayerDRM -configuration Release -sdk iphoneos -derivedDataPath "$GITHUB_WORKSPACE/build" CODE_SIGNING_ALLOWED=NO CODE_SIGN_IDENTITY=""
+        run: xcodebuild -project "$GITHUB_WORKSPACE/MonPlayerDRM/MonPlayerDRM.xcodeproj" -scheme MonPlayerDRM -configuration Release -sdk iphoneos -derivedDataPath "$GITHUB_WORKSPACE/build" CODE_SIGNING_ALLOWED=NO CODE_SIGN_IDENTITY=""
 
       - name: Package IPA
         run: |
