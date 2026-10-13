@@ -1,0 +1,232 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BB2C3D4E5F60718293A4B5C /* MonPlayerDRMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB2C3D4E5F60718293A4B5C /* MonPlayerDRMApp.swift */; };
+		1CB2C3D4E5F60718293A4B5C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B2C3D4E5F60718293A4B5C /* ContentView.swift */; };
+		1DB2C3D4E5F60718293A4B5C /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2C3D4E5F60718293A4B5C /* PlayerView.swift */; };
+		1EB2C3D4E5F60718293A4B5C /* M3UParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B2C3D4E5F60718293A4B5C /* M3UParser.swift */; };
+		1FB2C3D4E5F60718293A4B5C /* ClearKeyLicense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B2C3D4E5F60718293A4B5C /* ClearKeyLicense.swift */; };
+		20B2C3D4E5F60718293A4B5C /* ShakaDRMEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B2C3D4E5F60718293A4B5C /* ShakaDRMEngine.swift */; };
+		21B2C3D4E5F60718293A4B5C /* drm-player.html in Resources */ = {isa = PBXBuildFile; fileRef = 16B2C3D4E5F60718293A4B5C /* drm-player.html */; };
+		22B2C3D4E5F60718293A4B5C /* drm-player.js in Resources */ = {isa = PBXBuildFile; fileRef = 17B2C3D4E5F60718293A4B5C /* drm-player.js */; };
+		23B2C3D4E5F60718293A4B5C /* shaka-player.ui.js in Resources */ = {isa = PBXBuildFile; fileRef = 18B2C3D4E5F60718293A4B5C /* shaka-player.ui.js */; };
+		24B2C3D4E5F60718293A4B5C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B2C3D4E5F60718293A4B5C /* WebKit.framework */; };
+		25B2C3D4E5F60718293A4B5C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB2C3D4E5F60718293A4B5C /* SwiftUI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0FB2C3D4E5F60718293A4B5C /* MonPlayerDRMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonPlayerDRMApp.swift; sourceTree = "<group>"; };
+		10B2C3D4E5F60718293A4B5C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		11B2C3D4E5F60718293A4B5C /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		12B2C3D4E5F60718293A4B5C /* M3UParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M3UParser.swift; sourceTree = "<group>"; };
+		13B2C3D4E5F60718293A4B5C /* ClearKeyLicense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearKeyLicense.swift; sourceTree = "<group>"; };
+		14B2C3D4E5F60718293A4B5C /* ShakaDRMEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakaDRMEngine.swift; sourceTree = "<group>"; };
+		15B2C3D4E5F60718293A4B5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16B2C3D4E5F60718293A4B5C /* drm-player.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "drm-player.html"; sourceTree = "<group>"; };
+		17B2C3D4E5F60718293A4B5C /* drm-player.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "drm-player.js"; sourceTree = "<group>"; };
+		18B2C3D4E5F60718293A4B5C /* shaka-player.ui.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "shaka-player.ui.js"; sourceTree = "<group>"; };
+		19B2C3D4E5F60718293A4B5C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		1AB2C3D4E5F60718293A4B5C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		0EB2C3D4E5F60718293A4B5C /* MonPlayerDRM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonPlayerDRM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0CB2C3D4E5F60718293A4B5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24B2C3D4E5F60718293A4B5C /* WebKit.framework in Frameworks */,
+				25B2C3D4E5F60718293A4B5C /* SwiftUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04B2C3D4E5F60718293A4B5C = {
+			isa = PBXGroup;
+			children = (
+				05B2C3D4E5F60718293A4B5C /* MonPlayerDRM */,
+				06B2C3D4E5F60718293A4B5C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		05B2C3D4E5F60718293A4B5C /* MonPlayerDRM */ = {
+			isa = PBXGroup;
+			children = (
+				0FB2C3D4E5F60718293A4B5C,
+				10B2C3D4E5F60718293A4B5C,
+				11B2C3D4E5F60718293A4B5C,
+				12B2C3D4E5F60718293A4B5C,
+				13B2C3D4E5F60718293A4B5C,
+				14B2C3D4E5F60718293A4B5C,
+				15B2C3D4E5F60718293A4B5C /* Info.plist */,
+				16B2C3D4E5F60718293A4B5C,
+				17B2C3D4E5F60718293A4B5C,
+				18B2C3D4E5F60718293A4B5C,
+			);
+			path = MonPlayerDRM;
+			sourceTree = "<group>";
+		};
+		06B2C3D4E5F60718293A4B5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0EB2C3D4E5F60718293A4B5C /* MonPlayerDRM.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07B2C3D4E5F60718293A4B5C /* MonPlayerDRM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08B2C3D4E5F60718293A4B5C /* Build configuration list for PBXNativeTarget "MonPlayerDRM" */;
+			buildPhases = (
+				0BB2C3D4E5F60718293A4B5C /* Sources */,
+				0CB2C3D4E5F60718293A4B5C /* Frameworks */,
+				0DB2C3D4E5F60718293A4B5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MonPlayerDRM;
+			productName = MonPlayerDRM;
+			productReference = 0EB2C3D4E5F60718293A4B5C /* MonPlayerDRM.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00B2C3D4E5F60718293A4B5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					07B2C3D4E5F60718293A4B5C = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 01B2C3D4E5F60718293A4B5C /* Build configuration list for PBXProject "MonPlayerDRM" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 04B2C3D4E5F60718293A4B5C;
+			productRefGroup = 06B2C3D4E5F60718293A4B5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07B2C3D4E5F60718293A4B5C /* MonPlayerDRM */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0DB2C3D4E5F60718293A4B5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21B2C3D4E5F60718293A4B5C,
+				22B2C3D4E5F60718293A4B5C,
+				23B2C3D4E5F60718293A4B5C,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0BB2C3D4E5F60718293A4B5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BB2C3D4E5F60718293A4B5C,
+				1CB2C3D4E5F60718293A4B5C,
+				1DB2C3D4E5F60718293A4B5C,
+				1EB2C3D4E5F60718293A4B5C,
+				1FB2C3D4E5F60718293A4B5C,
+				20B2C3D4E5F60718293A4B5C,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		02B2C3D4E5F60718293A4B5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		03B2C3D4E5F60718293A4B5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		09B2C3D4E5F60718293A4B5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "MonPlayerDRM/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.monplayer.drm";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0AB2C3D4E5F60718293A4B5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "MonPlayerDRM/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.monplayer.drm";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01B2C3D4E5F60718293A4B5C /* Build configuration list for PBXProject "MonPlayerDRM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02B2C3D4E5F60718293A4B5C /* Debug */,
+				03B2C3D4E5F60718293A4B5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08B2C3D4E5F60718293A4B5C /* Build configuration list for PBXNativeTarget "MonPlayerDRM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09B2C3D4E5F60718293A4B5C /* Debug */,
+				0AB2C3D4E5F60718293A4B5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00B2C3D4E5F60718293A4B5C /* Project object */;
+}
